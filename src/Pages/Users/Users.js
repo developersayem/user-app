@@ -17,7 +17,7 @@ const Users = () => {
     }, [])
 
     return (
-        <div className='text-blue-500'>
+        <div>
             {
                 users?.map(user => <UserCard
                     key={user.id}
