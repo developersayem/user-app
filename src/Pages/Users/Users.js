@@ -28,8 +28,8 @@ const Users = () => {
     const currentUsers = users.slice(fastUserIndex, lastUserIndex)
 
     return (
-        <div className='flex justify-center '>
-            <div className='mt-20'>
+        <div className='lg:px-16 lg:py-20'>
+            <div className=''>
                 <div>
                     {
                         currentUsers?.map(user => <UserCard

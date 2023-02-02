@@ -20,7 +20,7 @@ const UserCard = ({ user }) => {
             <div open={open === 1}
                 className="card w-full mx-auto  rounded-lg py-8 px-2 md:px-5 lg:px-10 bg-white shadow-md text-black">
                 <div >
-                    <div className="card-body grid grid-cols-5 ">
+                    <div className="card-body grid grid-cols-1 lg:grid-cols-5 gap-3 ">
                         {/* CARD BODY */}
                         <div className="card-actions items-center flex justify-center">
                             <p className='flex justify-center '>{company?.name}</p>

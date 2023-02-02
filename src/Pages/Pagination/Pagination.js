@@ -10,6 +10,7 @@ const Pagination = ({ totalUsers, currentUsers, userPerPages, currentPage, setCu
     //PREVIOUS PAGE FUCTION
     const previousPage = () => {
         if (currentPage === 1) {
+            //TOAST
             toast.error("there is no previous page")
         } else {
             setCurrentPage(currentPage - 1)
@@ -20,6 +21,7 @@ const Pagination = ({ totalUsers, currentUsers, userPerPages, currentPage, setCu
         //FIND MAX PAGE NUM
         let maxPage = Math.ceil(totalUsers / userPerPages);
         if (currentPage === maxPage) {
+            //TOAST
             toast.error("there is no next page")
         } else {
             setCurrentPage(currentPage + 1)
@@ -28,7 +30,7 @@ const Pagination = ({ totalUsers, currentUsers, userPerPages, currentPage, setCu
 
 
     return (
-        <div>
+        <div className='mb-5'>
             <div className="flex justify-center space-x-1 dark:text-gray-100">
                 {/* PREVIOUS PAGE BUTTON */}
                 <button
@@ -55,8 +57,8 @@ const Pagination = ({ totalUsers, currentUsers, userPerPages, currentPage, setCu
                         <polyline points="9 18 15 12 9 6"></polyline>
                     </svg>
                 </button>
+                {/* TOASTER COMPONENT */}
                 <Toaster />
-
             </div>
         </div>
     );
