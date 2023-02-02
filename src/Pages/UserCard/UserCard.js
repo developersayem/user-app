@@ -51,7 +51,7 @@ const UserCard = ({ user }) => {
                         </div>
                     </div>
                 </div>
-                <div className={`${!open ? "hidden" : ""} shadow-inner px-8 py-5 mt-5 rounded-md `}>
+                <div className={`${!open ? "hidden" : ""} shadow-inner px-8 py-5 mt-5 rounded-md transition`}>
                     <div className="">
                         <h1 className="">Description</h1>
                         <p className="text-sm mt-1 text-[#767272]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus cum non nam, reiciendis minima commodi sunt dolor dolores odit! Officiis!</p>
